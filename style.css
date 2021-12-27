@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.primary {
+    position: sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.game {
+    margin: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: brown;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: rgb(143, 5, 5) 2px line-through;
+    text-shadow: 2px 3px 3px white;
+    width: 100%;
+    height: 55vh;
+    font-size: 60px;
+}
+
+.headimg {
+    overflow-y: hidden;
+    animation: movex 2s 3s 6 linear;
+}
+
+.headimg1 {
+    overflow-y: hidden;
+
+    animation: movex1 2s 3s 6 linear;
+}
+
+
+
+.hed {
+    border-radius: 200px;
+    animation: round 0.1s linear infinite;
+}
+
+.hed1 {
+    border-radius: 200px;
+    animation: round1 0.1s linear infinite;
+}
+
+.flex {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    
+}
+
+.title {
+    overflow-y: hidden;
+    transition: 6s;
+}
+
+.title:hover {
+    font-size: x-large;
+}
+
+@keyframes round {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round1 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes movex {
+    0% {
+        transform: translateX(-50vw);
+    }
+    50% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(50vw);
+    }
+}
+
+@keyframes movex1 {
+    0% {
+        transform: translateX(50vw);
+    }
+    50% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background-image: url("nav.jpg");
+    width: 100%;
+    flex-direction: row;
+}
+
+.navbar2 {
+    position: sticky;
+    top: 0vh;
+    display: block;
+    background-image: url("nav.jpg");
+    width: 18%;
+}
+
+.navitems {
+    
+    padding: 20px;
+    margin: 15px;
+    transition: 0.5s;
+    font-size: larger;
+}
+.navitems2 {
+    padding: 20px;
+    margin: 15px;
+    transition: 0.5s;
+    font-size: larger;
+}
+.navitems:hover,.navitems2:hover {
+    font-size: 30px;
+    color: grey;
+}
+
+.banner1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(248, 151, 138);
+    background-image: url("banner1.jpg");
+    background-repeat: no-repeat;
+    text-shadow: 5px 6px 6px rgb(51, 15, 15);
+    background-size: cover;
+    width: 100%;
+    font-size: xx-large;
+    transition: 0.4s;
+  /* overflow: hidden; */
+
+}
+
+.ver,
+.hor {
+    height: 5vh;
+    background-image: url("back.jpg");
+    color: antiquewhite;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.ver:hover,
+.hor:hover {
+    height: 7vh;
+}
+
+.banner1:hover {
+    color: rgb(245, 74, 74);
+    text-shadow: 5px 6px 6px rgb(48, 41, 41);
+    font-size: 50px;
+}
+.game1{
+  /* margin: 20px; */
+
+}
+.pubg{
+    margin: 2vw;
+    margin-right:9vw ;
+padding: 30px;
+background-image: url("pubg1.jpg");
+background-repeat: no-repeat;
+border: 5px solid brown;
+ border-radius: 20px;
+color: azure;
+    transition: 1s;
+    background-size: 100vw 70vh;
+font-size: 2vw;
+}
+.CALLOFDUTY{
+    margin: 2vw;
+    margin-left:9vw ;
+padding: 30px;
+background-image: url("cod.jpg");
+background-repeat: no-repeat;
+border: 5px solid brown;
+ border-radius: 20px;
+color: azure;
+background-size: 100vw 60vh;
+    transition: 1s;
+    font-size: 2vw;
+}
+.valor{
+    margin: 2vw;
+    margin-right:9vw ;
+padding: 30px;
+background-image: url("valo.jpg");
+background-repeat: no-repeat;
+border: 5px solid brown;
+ border-radius: 20px;
+color: azure;
+background-size: 100vw 60vh;
+    transition:  1s;
+    font-size: 2vw;
+}
+
+b{
+    font-size: 8vh;
+    color: rgb(114, 11, 11);
+    text-decoration: dashed;
+}
+.contentp,.contentc,.contentv{
+    color: rgb(29, 0, 0);
+}
+/* .contentp:hover,.contentc:hover,.contentv:hover{
+    color: black;
+   
+} */
+.valor:hover,.pubg:hover,.CALLOFDUTY:hover{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 30px;
+    color: black;
+   
+}
